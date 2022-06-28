@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        html{
+                font-size: 62.5%;
+            }
+        body{
+            background-color: #eee;
+            
+        }
+        #header{
+            display: flex;
+            flex-direction: row;
+            margin-top: 0rem;
+            margin-left: 3.5rem;
+            height: 6.5rem;
+            background-color: #eee;
+            align-items: center;
+           
+        }
+        #header-img{
+            width: 31rem;
+        }
+        #nav-bar{
+            margin-left: 47rem;
+            font-size:medium;
+        }
+        .nav-link{
+            margin-left: 7.5rem;
+            text-decoration: none;
+            color: black;
+            margin-top: 5rem;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #email{
+            margin-top: 1.5rem;
+            width: 29rem;
+            height: 3rem;
+            border: 0.2rem solid black;
+            padding-left: 0.5rem;
+        }
+        #submit{
+            margin-top: 1.5rem;
+            margin-left: 7rem;
+            width: 15rem;
+            border: none;
+            background-color: #f1c40f;
+            padding: 0.5rem;
+            padding-left: 1.5rem;
+            font-weight:90;
+        }
+        #submit:hover{
+            background-color:#c58017f8;
+            cursor: pointer;
+        }
+        #parentdiv{
+            margin-top: 9rem;
+        }
+        #_1st{
+            height: 7rem;
+            width: 7rem;
+        }
+        #child1{
+            width: 80rem;
+            margin-top: 1.5rem;
+            margin-left: 7rem;
+            font-size: 1.6rem;
+
+        }
+        .baby{
+            display: flex;
+            margin-left: 13rem;
+        }
+        #_2nd{
+            height: 7rem;
+            width: 7rem;
+        }
+        #child2{
+            width: 80rem;
+            margin-top: 1.5rem;
+            margin-left: 7rem;
+            font-size: 1.6rem;
+
+        }
+        #_3rd{
+            height: 7rem;
+            width: 7rem;
+        }
+        #child3{
+            width: 80rem;
+            margin-top: 1.5rem;
+            margin-left: 7rem;
+            font-size: 1.6rem;
+        }
+        .top{
+            margin-top: 4rem;
+        }
+        #main_video{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8rem;
+            margin-bottom: 6.5rem;
+        }
+        #video{
+            width:57rem; 
+            height:30rem;
+        }
+        #container{
+            /* width: 83rem; */
+            position: fixed;
+        }
+        #firsth2{
+            margin-top: 7.5rem;
+            font-size: 2.5rem;
+
+        }
+        #parentdiv2{
+            display:flex;
+            
+        }
+        .size{
+            height: 30rem;
+            width: 30rem;
+            border: 0.2rem solid black;
+            margin-left: 2rem;
+        }
+        #child4{
+            margin-left: 5.5rem;
+        }
+        .subtitle{
+            background-color: lightgrey;
+            height: 5.5rem;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .details{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 1.5rem;
+        }  
+        .detailsh2{
+            margin-bottom: 2rem;
+            font-size: 2.3rem;
+        }
+        .margin{
+            margin-bottom: 1rem;
+        }
+        #select{
+            border: none;
+            background-color: #f1c40f;
+            margin-top: 1.5rem;
+            height: 3.8rem;
+            width: 10rem;
+        }
+        #select:hover{
+            background-color:#c58017f8;
+            cursor: pointer;
+        }
+        #select2{
+            border: none;
+            background-color: #f1c40f;
+            margin-top: 1.5rem;
+            height: 3.8rem;
+            width: 10rem;
+        }
+        #select2:hover{
+            background-color:#c58017f8;
+            cursor: pointer;
+        }
+        #select3{
+            border: none;
+            background-color: #f1c40f;
+            margin-top: 1.5rem;
+            height: 3.8rem;
+            width: 10rem;
+        }
+        #select3:hover{
+            background-color:#c58017f8;
+            cursor: pointer;
+        }
+        #footdiv{
+            display: flex;
+            height: 7rem;
+            max-width: 94.5rem;
+            background-color: lightgray;
+            margin-top: 3rem;
+            margin-left: 19rem;
+            align-items: flex-end;
+            /* justify-content: flex-end; */
+            flex-direction: column;
+        }
+        #footchild_div{
+            margin-top: 1.5rem;
+            margin-bottom: 0.7rem;
+        }
+        #privacy{
+            text-decoration: none;
+            color: black;
+            margin-right: 3rem;
+            font-size:1.5rem;
+
+        }
+        #terms{
+            text-decoration: none;
+            color: black;
+            margin-right: 3rem;
+            font-size:1.5rem;
+
+        }
+        #contact{
+            text-decoration: none;
+            color: black;
+            margin-right: 3rem;
+            font-size:1.5rem;
+
+        }
+        #copyright{
+            color: grey;
+            font-weight:lighter;
+            font-size:1.4rem;
+            margin-right: 3rem;
+        }
+        @media(max-width:280px){
+            html{
+                font-size: 27%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+    <header id="header">
+        <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="company logo">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#parentdiv">Features</a>
+            <a class="nav-link" href="#video">How It Works</a>
+            <a class="nav-link" href="#parentdiv2">Pricing</a>
+        </nav>
+    </header>
+    </div>
+    <main>
+        <h2 id="firsth2">Handcrafted, home-made masterpieces</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form" target="_blank">
+            <input id="email" type="email" name="email" placeholder="Enter your email address"> <br>
+            <input id="submit" type="submit" value="GET STARTED">
+        </form>
+        <div id="parentdiv">
+            <div class="baby">
+            <img id="_1st" src="1st.png" alt="">
+            <div id="child1">
+                <div>
+                <h2>Premium Materials</h2>
+                <p class="control">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="baby top">
+            <img id="_2nd" src="2nd.png" alt="">
+            <div id="child2">
+                <div>
+                <h2>Fast Shipping</h2>
+                <p class="control">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="baby top">
+            <img id="_3rd" src="3rd.png" alt="">
+            <div id="child3">
+                <div>
+                <h2>Quality Assurance</h2>
+                <p class="control">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+            </div>
+        </div>
+       
+        <div id="main_video">
+        <iframe id="video" src="https://www.youtube.com/embed/AfSWldaT-AE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="parentdiv2">
+            <div id="child4" class="size">
+                <div class="subtitle">
+                    TENOR TROMBONE
+                </div>
+                <div class="details">
+                    <h2 class="detailsh2">$600</h2>
+                    <p class="margin">Lorem ipsum.</p>
+                    <p class="margin">Lorem ipsum.</p>
+                    <p class="margin">Lorem ipsum dolor.</p>
+                    <p class="margin">Lorem ipsum.</p>
+                    <input type="submit" id="select" name="$600" value="SELECT">
+                </div>
+            </div>
+
+            <div id="child5" class="size">
+                <div class="subtitle">
+                    BASS TROMBONE
+                </div>
+                <div class="details">
+                    <h2 class="detailsh2">$900</h2>
+                    <p class="margin">Lorem ipsum.</p>
+                    <p class="margin">Lorem ipsum.</p>
+                    <p class="margin">Lorem ipsum dolor.</p>
+                    <p class="margin">Lorem ipsum.</p>
+                    <input type="submit" id="select2" name="$900" value="SELECT">
+                </div>
+            </div>
+
+            <div id="child6" class="size">
+                <div class="subtitle">
+                    VALVE TROMBONE
+                </div>
+                <div class="details">
+                    <h2 class="detailsh2">$1200</h2>
+                    <p class="margin">Lorem ipsum.</p>
+                    <p class="margin">Lorem ipsum.</p>
+                    <p class="margin">Lorem ipsum dolor.</p>
+                    <p class="margin">Lorem ipsum.</p>
+                    <input type="submit" id="select3" name="$1200" value="SELECT">
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div id="footdiv">
+            <div id="footchild_div">
+            <a href="#" id="privacy">Privacy</a>
+            <a href="#" id="terms">Terms</a>
+            <a href="#" id="contact">Contact</a>
+        </div>
+            <span id="copyright">Copyright 2016, Original Trombones</span>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
